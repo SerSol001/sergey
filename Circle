@@ -1,12 +1,19 @@
-#include "iostream"
- 
-int main() {
-     double R;
-     const double pi = 3.14;
-     std::cout << "Введите радиус: ";
-     std::cin >> R;
-     double l = 2*pi*R;
-     double S = pi*R*R;
-     std::cout << "Dlina = " << l << "; Ploschad' = " << S << end;
-     return 1;
+#include <iostream>
+const double pi = 3.14;
+double CircleLenght(double radius)
+{
+  return 2.0 * pi * radius;
+}
+double CircleArea(double radius)
+{
+  return pi * radius * radius ;
+}
+int main()
+{
+  double radius;
+  std::cout << "Vvedite radius kruga: ";
+  std::cin >> radius;
+  std::cout << "Dlina kruga = " << CircleLenght(radius) << std::endl;
+  std::cout << "Ploschad' kruga = "   << CircleArea  (radius) << std::endl;
+  return 0;
 }
