@@ -1,0 +1,12 @@
+#include "iostream"
+ 
+int main() {
+     double R;
+     const double pi = 3.14;
+     std::cout << "Введите радиус: ";
+     std::cin >> R;
+     double l = 2*pi*R;
+     double S = pi*R*R;
+     std::cout << "Dlina = " << l << "; Ploschad' = " << S << end;
+     return 1;
+}
